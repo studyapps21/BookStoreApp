@@ -19,12 +19,13 @@ namespace Prag.BookStore.Controllers
         {
            var data= _bookRepository.GetAllBooks();
 
-           return View();
+           return View(data);
         }
 
-        public BookModel getBook(int id)
+        public ActionResult getBook(int id)
         {
-            return _bookRepository.GetBookById(id);
+            var data = _bookRepository.GetBookById(id);
+            return View(data);
         }
 
         public List<BookModel> searchBooks(string bookName , string authorName)

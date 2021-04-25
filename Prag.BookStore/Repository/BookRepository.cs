@@ -27,10 +27,10 @@ namespace Prag.BookStore.Repository
         {
             return new List<BookModel>()
             {
-                new BookModel(){ Id = 1, Title ="MVC" , Author="Pragnesh"},
-                new BookModel(){ Id = 2, Title ="c#" , Author="Yashumati"},
-                new BookModel(){ Id = 3, Title ="Angular" , Author="Krupali"},
-                new BookModel(){ Id = 4, Title ="React" , Author="NT"}
+                new BookModel(){ Id = 1, Title ="MVC" , Author="Pragnesh" , Description="MVC is model view controller", Category="Programming" , Language="English", TotalPages=1234},
+                new BookModel(){ Id = 2, Title ="c#" , Author="Yashumati", Description="C# is object oriented programming language", Category="Programming" , Language="English, French", TotalPages=4321},
+                new BookModel(){ Id = 3, Title ="Angular" , Author="Krupali", Description="angular is framework for building SPA", Category="Framework" , Language="English, Hindi", TotalPages=4567},
+                new BookModel(){ Id = 4, Title ="React" , Author="NT", Description="React is light weight client side library for building SPA", Category="Framework" , Language="English, spanish", TotalPages=7654}
             };
         }
     }
